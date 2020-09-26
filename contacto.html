@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Distribuidora</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="widht-device-widht, initial-scale=1.0">
+
+        <!-- Estilos -->
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+    <body>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <a class="navbar-brand button__information--blue" href="#">ESQUEL</a>
+            <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link button__information" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link button__information" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle button__information" data-toggle="dropdown" href="productos.html" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="productos.html">Productos</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Solicitar cotizacion</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link button__information" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
+          </nav>
+        </header>
+            <div class="jumbotron jumbotron-fluid text-center justify-content-center bg-white">
+                <h1 class="display-4">Contacto
+                </h1>
+                <p class="lead">Estamos ansiosos de contactarlo para brindarle nuestros servicios</p>
+                <form action="gracias.html" method="POST">
+                <fieldset> 
+                    <legend> Mi formulario </legend>
+                    <label for="nombre"> Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Mi nombre">
+                    <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" placeholder="Mi apellido">
+                    <br>
+                    <label for="contrasena">Password:</label>
+                    <input type="password" name="contrasena">
+                    <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" placeholder="Escriba su mensaje aqui" ></textarea>
+                    <br><br>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" name="sexo" value="masculino">Masculino
+                    <input type="radio" name="sexo" value="femenino">Femenino
+                    <br>
+                    <label for="tipo_de_cliente">Tipo de cliente:</label>
+                    <input type="checkbox" name="tipo_de_cliente" value="consumidor_final">Consumidor final
+                    <input type="checkbox" name="tipo_de_cliente" value="revendedor">Revendedor
+                    <input type="checkbox" name="tipo_de_cliente" value="constructor">Constructor
+                    <br>
+                    <label for="ubicacion_geografica">Ubicacion geografica:</label>
+                    <select name="ubicacion_geografica">
+                        <option selected="selected">Seleccione</option>
+                        <option value="gba">GBA </option>
+                        <option value="caba">CABA </option>
+                        <option value="buenos_aires">Buenos Aires </option>
+                        <option value="interior_del_pais">Interior del pais </option>
+                    </select><br>
+                    <input type="submit" name="botom" value="ENVIAR">   
+                </fieldset>      
+                </form>
+            </div>
+        <br><br>
+    
+        <footer>
+            <p>Direccion: Av Montana 44444<br>
+            Tel: 011 444444444<br>
+            E-mail: hola@distribuidora.com.ar</p>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>
