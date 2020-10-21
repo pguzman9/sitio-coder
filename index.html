@@ -14,135 +14,241 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="library/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
     <body>
-        <header class="header header__menu--background header:before">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-              <a class="navbar-brand" href="index.html">
-                  <img src="img/logo.png" alt="Logo-Esquel" id="logo">
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto" id="nav-bar__titles">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Productos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="productos.html">Productos</a>
-                      <a class="dropdown-item" href="#">Servicios</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Cotizaciones</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
+      <header>
+          <div class="logo-nav-contenedor">
+              <a id="logo">ESQUEL</a>
+              
+              <nav class="navigation">
+                <ul>
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#nosotros">Nosotros</a></li>
+                  <li><a href="#productos">Productos</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
                 </ul>
-              </div>
-            </nav>
-        </header>
-        <div class="jumbotron jumbotron-fluid text-center justify-content-center bg-white">
-          <h1 class="display-3">ESQUEL
-          </h1>
-          <p class="lead">Agilidad para tus obras</p>
-            <div id="demo" class="carousel slide bg-white mt-5" data-ride="carousel">
-
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-            
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/Tinacoopt.jpg" alt="bomba Rowa">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/bomba-presurizadora-rowa-max-press-30-frecuencia-variable-nuevaoptimizado.jpg" alt="tanque">
-                </div>
-                </div>
-            
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                </a>
-            
+              </nav>
+          </div>
+          <section class="textos-header">
+              <h1>Agiliza tus obras. Mejora tus costos.</h1>
+              <h2>Con las mejores marcas y logística a tu servicio</h2>
+          </section>
+            <div class="wave" style="height: 150px; overflow: hidden;">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;">
+                    </path>
+                </svg>
             </div>
-            <section class="container mt-5 pt-5">
-            <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </header>
+            <section class="contenedor nosotros">
+              <div class="contenedor-nosotros">
+                  <img src="img/ilustracion2.svg" alt="" class="imagen-nosotros">
+                  <div class="contenido-textos">
+                      <h3><span>1</span>Productos para obras sanitarias</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis perspiciatis, natus pariatur, ex tenetur officia et temporibus dolores autem maiores, consectetur asperiores veritatis animi eligendi incidunt ratione. Quis, praesentium.</p>
+                      <h3><span>2</span>Logistica propia y eficiente</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis perspiciatis, natus pariatur, ex tenetur officia et temporibus dolores autem maiores, consectetur asperiores veritatis animi eligendi incidunt ratione. Quis, praesentium.</p>
                   </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
               </div>
             </section>
+            <section class="portafolio">
+                <a name="productos"></a>
+                <div class="contenedor">
+                    <h2 class="titulo">Qué productos ofrecemos</h2>
+                    <div class="galeria-port">
+                        <div class="imagen-port">
+                            <img src="img/img8.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Solicitar cotizacion</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img2.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Solicitar cotizacion</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img3.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Solicitar cotizacion</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img4.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Solicitar cotizacion</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img5.png" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Solicitar cotizacion</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img6.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Solicitar cotizacion</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img7.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Solicitar cotizacion</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img1.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Solicitar cotizacion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clientes contenedor">
+                <h2 class="titulo">Que dicen nuestros clientes</h2>
+                <div class="tarjetas">
+                    <div class="tarjeta">
+                        <img src="img/face1.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Lassco Renovations</h4>
+                            <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/face2.png" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Constructora MB</h4>
+                            <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="servicios">
+                <div class="contenedor">
+                    <h2 class="titulo">
+                    <a name="nosotros">Nosotros</a>
+                    </h2>
+                    <div class="servicio-cont">
+                        <div class="servicio-ind">
+                            <img src="img/ilustracion1.svg" alt="">
+                            <h3>Brindamos atencion virtual constante</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatem.</p>
+                        </div>
+                        <div class="servicio-ind">
+                            <img src="img/ilustracion3.svg" alt="">
+                            <h3>Flota propia y seguimiento logistico en tiempo real</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatem.</p>
+                        </div>
+                        <div class="servicio-ind">
+                            <img src="img/ilustracion4.svg" alt="">
+                            <h3>Asesoramiento especializado por expertos del rubro</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <a name="contacto"></a>
+                    <div class="contenido__contacto">
+                        <h1 class="logo__contacto">Contactanos</h1>
+                    <div class="contacto__wrapper">
+                        <div class="contacto__form">
+                            <form action="">
+                                <p>
+                                    <label for="nombrecompleto">Nombre</label>
+                                    <input type="text" name="nombrecompleto" id="nombrecompleto">
+                                </p>
+                                <p>
+                                    <label for="">Email</label>
+                                    <input type="email" name="email">
+                                </p>
+                                <p>
+                                    <label for="">Telefono</label>
+                                    <input type="tel" name="telefono">
+                                </p>
+                                <p class="block">
+                                    <label for="">Mensaje</label>
+                                    <textarea name="mensaje" id="" rows="3"></textarea>
+                                </p>
+                                <p class="block"><button type="submit">Enviar</button></p>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        <footer>
+            <div class="container-footer-all">
+                <div class="container-body">
+                    <div class="column1">
+                        <h1>Mas información de la compañía</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ut ex fugit odit quibusdam eum unde natus soluta molestias, vel sequi nemo suscipit? Iure odit nesciunt ratione adipisci eaque molestias rem!</p>
+                    </div>
+                    <div class="column2">
+                        <h1>Redes sociales</h1>
+                            <div class="row">
+                                <img src="icon/facebook.png" alt="">
+                                <label for="">Siguenos en Facebook</label>
+                            </div>
+                            <div class="row">
+                                <img src="icon/twitter.png" alt="">
+                                <label for="">Siguenos en Twitter</label>
+                            </div>
+                            <div class="row">
+                                <img src="icon/instagram.png" alt="">
+                                <label for="">Siguenos en Instagram</label>
+                            </div>
+                            <div class="row">
+                                <img src="icon/googleplus.png" alt="">
+                                <label for="">Siguenos en Google</label>
+                            </div>
+                    </div>
+                    <div class="column3">
+                        <h1>Informacion contacto</h1>
+                        <div class="row2">
+                            <img src="icon/house.png" alt="">
+                            <label for="">Av Israel</label>
+                        </div>
+                        <div class="row2">
+                            <img src="icon/telefono.png" alt="">
+                            <label for="">444-444</label>
+                        </div>
+                        <div class="row2">
+                            <img src="icon/email.png" alt="">
+                            <label for="">esquel@esquel.com</label>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            <div>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="button">
-                  Datos de contacto
-              </button>
-              
-              <div class="modal" id="myModal">
-                  <div class="modal-dialog">
-                  <div class="modal-content">
-              
-                      <div class="modal-header">
-                      <h4 class="modal-title">Datos de contacto</h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
-              
-                      <div class="modal-body">
-                          <p>Direccion: Av Montana 44444<br>
-                          Tel: 011 444444444<br>
-                          E-mail: hola@distribuidora.com.ar</p>
-                      </div>
-              
-                      <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                      </div>
-              
-                  </div>
-                  </div>
-              </div>
-          </div>
-            <footer class="footer">
-            <p class="footer__information">Direccion: Av Montana 44444<br>
-            <br>
-            E-mail: hola@distribuidora.com.ar</p>
+            <div class="container-footer">
+                <div class="footer">
+                    <div class="copyright">
+                        &copy; 2020 Todos los derechos reservados
+                    </div>
+                    <div class="information">
+                        <a href="">Informacion compañia |</a>  
+                        <a href="">Politicas de la empresa |</a> 
+                        <a href="">Terminos y condiciones</a>
+                    </div>
+                </div>
+            </div>
         </footer>
     
         
