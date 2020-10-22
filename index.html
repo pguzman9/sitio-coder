@@ -10,7 +10,7 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
         <!-- CSS -->
         <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="library/bootstrap.min.css"/>
@@ -23,103 +23,115 @@
               
               <nav class="navigation">
                 <ul>
-                  <li><a href="#">Inicio</a></li>
-                  <li><a href="#nosotros">Nosotros</a></li>
-                  <li><a href="#productos">Productos</a></li>
-                  <li><a href="#contacto">Contacto</a></li>
+                  <li><a href="#" id="menuInicio">Inicio</a></li>
+                  <li><a href="#" id="menuNosotros">Nosotros</a></li>
+                  <li><a href="#" id="menuProductos">Productos</a></li>
+                  <li><a href="#" id="menuContacto">Contacto</a></li>
                 </ul>
               </nav>
           </div>
-          <section class="textos-header">
-              <h1>Agiliza tus obras. Mejora tus costos.</h1>
-              <h2>Con las mejores marcas y logística a tu servicio</h2>
-          </section>
-            <div class="wave" style="height: 150px; overflow: hidden;">
-                <svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                    style="height: 100%; width: 100%;">
-                    <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;">
-                    </path>
-                </svg>
-            </div>
-      </header>
-            <section class="contenedor nosotros">
-              <div class="contenedor-nosotros">
-                  <img src="img/ilustracion2.svg" alt="" class="imagen-nosotros">
-                  <div class="contenido-textos">
-                      <h3><span>1</span>Productos para obras sanitarias</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis perspiciatis, natus pariatur, ex tenetur officia et temporibus dolores autem maiores, consectetur asperiores veritatis animi eligendi incidunt ratione. Quis, praesentium.</p>
-                      <h3><span>2</span>Logistica propia y eficiente</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis perspiciatis, natus pariatur, ex tenetur officia et temporibus dolores autem maiores, consectetur asperiores veritatis animi eligendi incidunt ratione. Quis, praesentium.</p>
-                  </div>
+          <div class="go-top-container">
+              <div class="go-top-button">
+                  <i class="fas fa-chevron-up">
+                      <img src="icon/alineacion-superior.png" alt="" class="boton__top">
+                  </i>
               </div>
+          </div>
+            <section class="textos-header">
+                <h1>Agiliza tus obras. Mejora tus costos.</h1>
+                <h2>Con las mejores marcas y logística a tu servicio</h2>
             </section>
-            <section class="portafolio">
-                <a name="productos"></a>
-                <div class="contenedor">
-                    <h2 class="titulo">Qué productos ofrecemos</h2>
-                    <div class="galeria-port">
-                        <div class="imagen-port">
-                            <img src="img/img8.jpg" alt="">
-                            <div class="hover-galeria">
-                                <img src="img/icono1.png" alt="">
-                                <p>Solicitar cotizacion</p>
+                <div class="wave" style="height: 150px; overflow: hidden;">
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                        style="height: 100%; width: 100%;">
+                        <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #fff;">
+                        </path>
+                    </svg>
+                </div>     
+      </header>
+            <div id="inicio">
+                <section class="contenedor nosotros">
+                <div class="contenedor-nosotros">
+                    <h1>Conoce <span class="titulo__main">Esquel</span></h1>
+                    <img src="img/ilustracion2.svg" alt="" class="imagen-nosotros">
+                    <div class="contenido-textos">
+                        <h3><span>1</span>Productos para obras sanitarias</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis perspiciatis, natus pariatur, ex tenetur officia et temporibus dolores autem maiores, consectetur asperiores veritatis animi eligendi incidunt ratione. Quis, praesentium.</p>
+                        <h3><span>2</span>Logistica propia</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis perspiciatis, natus pariatur, ex tenetur officia et temporibus dolores autem maiores, consectetur asperiores veritatis animi eligendi incidunt ratione. Quis, praesentium.</p>
+                    </div>
+                </div>
+                </section>
+            </div>
+            <div id="productos">
+                <section class="portafolio">
+                    <a name="productos"></a>
+                    <div class="contenedor">
+                        <h2 class="titulo">Qué productos ofrecemos</h2>
+                        <div class="galeria-port">
+                            <div class="imagen-port">
+                                <img src="img/img8.jpg" alt="">
+                                <div class="hover-galeria">
+                                    <img src="img/icono1.png" alt="">
+                                    <p>Solicitar cotizacion</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imagen-port">
-                            <img src="img/img2.jpg" alt="">
-                            <div class="hover-galeria">
-                                <img src="img/icono1.png" alt="">
-                                <p>Solicitar cotizacion</p>
+                            <div class="imagen-port">
+                                <img src="img/img2.jpg" alt="">
+                                <div class="hover-galeria">
+                                    <img src="img/icono1.png" alt="">
+                                    <p>Solicitar cotizacion</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imagen-port">
-                            <img src="img/img3.jpg" alt="">
-                            <div class="hover-galeria">
-                                <img src="img/icono1.png" alt="">
-                                <p>Solicitar cotizacion</p>
+                            <div class="imagen-port">
+                                <img src="img/img3.jpg" alt="">
+                                <div class="hover-galeria">
+                                    <img src="img/icono1.png" alt="">
+                                    <p>Solicitar cotizacion</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imagen-port">
-                            <img src="img/img4.jpg" alt="">
-                            <div class="hover-galeria">
-                                <img src="img/icono1.png" alt="">
-                                <p>Solicitar cotizacion</p>
+                            <div class="imagen-port">
+                                <img src="img/img4.jpg" alt="">
+                                <div class="hover-galeria">
+                                    <img src="img/icono1.png" alt="">
+                                    <p>Solicitar cotizacion</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imagen-port">
-                            <img src="img/img5.png" alt="">
-                            <div class="hover-galeria">
-                                <img src="img/icono1.png" alt="">
-                                <p>Solicitar cotizacion</p>
+                            <div class="imagen-port">
+                                <img src="img/img5.png" alt="">
+                                <div class="hover-galeria">
+                                    <img src="img/icono1.png" alt="">
+                                    <p>Solicitar cotizacion</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imagen-port">
-                            <img src="img/img6.jpg" alt="">
-                            <div class="hover-galeria">
-                                <img src="img/icono1.png" alt="">
-                                <p>Solicitar cotizacion</p>
+                            <div class="imagen-port">
+                                <img src="img/img6.jpg" alt="">
+                                <div class="hover-galeria">
+                                    <img src="img/icono1.png" alt="">
+                                    <p>Solicitar cotizacion</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imagen-port">
-                            <img src="img/img7.jpg" alt="">
-                            <div class="hover-galeria">
-                                <img src="img/icono1.png" alt="">
-                                <p>Solicitar cotizacion</p>
+                            <div class="imagen-port">
+                                <img src="img/img7.jpg" alt="">
+                                <div class="hover-galeria">
+                                    <img src="img/icono1.png" alt="">
+                                    <p>Solicitar cotizacion</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imagen-port">
-                            <img src="img/img1.jpg" alt="">
-                            <div class="hover-galeria">
-                                <img src="img/icono1.png" alt="">
-                                <p>Solicitar cotizacion</p>
+                            <div class="imagen-port">
+                                <img src="img/img1.jpg" alt="">
+                                <div class="hover-galeria">
+                                    <img src="img/icono1.png" alt="">
+                                    <p>Solicitar cotizacion</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="clientes contenedor">
-                <h2 class="titulo">Que dicen nuestros clientes</h2>
+                </section>
+            </div>
+            <section class="clientes contenedor section__clientes">
+                <h2 class="titulo__clientes">Que dicen nuestros clientes</h2>
                 <div class="tarjetas">
                     <div class="tarjeta">
                         <img src="img/face1.jpg" alt="">
@@ -137,61 +149,65 @@
                     </div>
                 </div>
             </section>
-            <section class="servicios">
-                <div class="contenedor">
-                    <h2 class="titulo">
-                    <a name="nosotros">Nosotros</a>
-                    </h2>
-                    <div class="servicio-cont">
-                        <div class="servicio-ind">
-                            <img src="img/ilustracion1.svg" alt="">
-                            <h3>Brindamos atencion virtual constante</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatem.</p>
-                        </div>
-                        <div class="servicio-ind">
-                            <img src="img/ilustracion3.svg" alt="">
-                            <h3>Flota propia y seguimiento logistico en tiempo real</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatem.</p>
-                        </div>
-                        <div class="servicio-ind">
-                            <img src="img/ilustracion4.svg" alt="">
-                            <h3>Asesoramiento especializado por expertos del rubro</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatem.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <a name="contacto"></a>
-                    <div class="contenido__contacto">
-                        <h1 class="logo__contacto">Contactanos</h1>
-                    <div class="contacto__wrapper">
-                        <div class="contacto__form">
-                            <form action="">
-                                <p>
-                                    <label for="nombrecompleto">Nombre</label>
-                                    <input type="text" name="nombrecompleto" id="nombrecompleto">
-                                </p>
-                                <p>
-                                    <label for="">Email</label>
-                                    <input type="email" name="email">
-                                </p>
-                                <p>
-                                    <label for="">Telefono</label>
-                                    <input type="tel" name="telefono">
-                                </p>
-                                <p class="block">
-                                    <label for="">Mensaje</label>
-                                    <textarea name="mensaje" id="" rows="3"></textarea>
-                                </p>
-                                <p class="block"><button type="submit">Enviar</button></p>
-                            </form>
+            <div id="nosotros">
+                <section class="servicios">
+                    <div class="contenedor">
+                        <h2 class="titulo">
+                        <a name="nosotros">Nosotros</a>
+                        </h2>
+                        <div class="servicio-cont">
+                            <div class="servicio-ind">
+                                <img src="img/ilustracion1.svg" alt="">
+                                <h3>Brindamos atencion virtual constante</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatem.</p>
+                            </div>
+                            <div class="servicio-ind">
+                                <img src="img/ilustracion3.svg" alt="">
+                                <h3>Flota propia y seguimiento logistico en tiempo real</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatem.</p>
+                            </div>
+                            <div class="servicio-ind">
+                                <img src="img/ilustracion4.svg" alt="">
+                                <h3>Asesoramiento especializado por expertos del rubro</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptatem.</p>
+                            </div>
                         </div>
                     </div>
+                </section>
+            </div>
+            <div id="contacto">
+                <section>
+                    <div>
+                        <a name="contacto"></a>
+                        <div class="contenido__contacto">
+                            <h1 class="logo__contacto">Contactanos</h1>
+                        <div class="contacto__wrapper">
+                            <div class="contacto__form">
+                                <form action="">
+                                    <p>
+                                        <label class="label" for="nombrecompleto">Nombre</label>
+                                        <input type="text" name="nombrecompleto" id="nombrecompleto">
+                                    </p>
+                                    <p>
+                                        <label class="label" for="">Email</label>
+                                        <input type="email" name="email">
+                                    </p>
+                                    <p>
+                                        <label class="label" for="">Telefono</label>
+                                        <input type="tel" name="telefono">
+                                    </p>
+                                    <p class="block">
+                                        <label class="label" for="">Mensaje</label>
+                                        <textarea name="mensaje" id="" rows="3"></textarea>
+                                    </p>
+                                    <p class="block"><button type="submit">Enviar</button></p>
+                                </form>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         <footer>
             <div class="container-footer-all">
                 <div class="container-body">
@@ -252,8 +268,10 @@
         </footer>
     
         
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script> 
+        <script src="animatescroll/animatescroll.min.js"></script>
     </body>
 </html>

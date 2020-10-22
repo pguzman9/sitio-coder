@@ -6,6 +6,10 @@
 body{
   font-family: 'Open Sans', sans-serif;
 }
+h1{
+  text-transform: uppercase;
+  display: inline-block;
+}
 .contenedor{
   padding: 60px 0;
   width: 90%;
@@ -13,11 +17,18 @@ body{
   margin: auto;
   overflow: hidden;
 }
+.titulo__main{
+  font-weight: bolder;
+  color: black;
+  font-family: 'Open Sans';
+}
 .titulo{
   color: black;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 60px;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
 }
 
 /* Header */
@@ -184,14 +195,30 @@ header .textos-header{
   transform: scale(1);
 }
 /* Clients */
-
+.section__clientes{
+  background: -webkit-linear-gradient(to right, hsla(217, 31%, 40%, 0.582), hsla(222, 11%, 24%, 0.7)), url(../img/main-clientes.jpg);
+  background: linear-gradient(to right, hsla(217, 31%, 40%, 0.582), hsla(222, 11%, 24%, 0.7)), url(../img/main-clientes.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+}
+.titulo__clientes{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+}
 .tarjetas{
   display: flex;
   justify-content: space-evenly;
 }
 
 .tarjetas .tarjeta{
-  background: #272becc7;
+  background: #003666;
   display: flex;
   width: 45%;
   height: 200px;
@@ -219,9 +246,10 @@ header .textos-header{
   font-size: 15px;
   padding: 1rem;
   margin: 1rem;
+  color: white;
 }
 
-/*  Our team */
+/*  nosotros */
 
 .about-services{
   background: #f2f2f2;
@@ -262,11 +290,13 @@ header .textos-header{
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 1.5em;
+    text-align: center;
 }
 .logo__contacto{
   text-align: center;
   font-size: 3em;
   color: black;
+  margin-bottom: 1em;
 }
 .contacto__wrapper{
   box-shadow: rgba(0, 0, 0, 0.6);
@@ -289,7 +319,12 @@ header .textos-header{
   margin: 0;
   padding: 1em;
 }
-
+.label{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
 
 
 .contacto__form form button,
@@ -302,7 +337,7 @@ header .textos-header{
   font-weight: bolder;
   background: none;
   outline: none;
-  border-bottom: 1px solid #d63031;
+  border-bottom: 5px solid black;
 }
 .contacto__form form button{
   background: #b70e21;
@@ -410,6 +445,65 @@ footer{
 .information a{
  text-decoration: none;
  color: #c7c7c7;
+}
+.go-top-container{
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: -1;
+}
+.go-top-button{
+  width: 0rem;
+  height: 0rem;
+  background: rgb(140, 140, 241);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.go-top-button i{
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: .2s;
+}
+.show{
+  z-index: 10;
+}
+.show .go-top-button{
+  animation: popup .3s ease-in-out;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 11;
+}
+.show i{
+  transform: translate(-50%, -50%) scale(1);
+}
+@keyframes popup{
+  0%{
+    width: 0rem;
+    height: 0rem;
+  }
+  50%{
+    width: 8rem;
+    height: 8rem;
+  }
+  100%{
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}
+.boton__top{
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 /* media queries*/
@@ -532,6 +626,7 @@ footer{
 
   .textos-header h2{
       font-size: 20px;
+      margin-bottom: 40px;
   }
   #logo{
     text-align: center;
@@ -572,5 +667,5 @@ footer{
   .contacto__wrapper *{
        padding: 2em;
   }
-  
+
 }
